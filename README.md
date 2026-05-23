@@ -1,14 +1,13 @@
 # PasswordForge
-
-Gerador de senhas seguras desenvolvido como projeto de aprendizado em ciberseguranca.
+Gerador de senhas seguras — projeto de aprendizado em cibersegurança.
 
 ---
 
 ## Sobre
 
-Criei essa ferramenta depois de estudar como ataques de dicionario funcionam na pratica. Quando voce vê 14 milhoes de senhas vazadas numa wordlist, entende rapidamente que a maioria das pessoas escolhe senhas fracas e previsiveis.
+Criei essa ferramenta depois de estudar como ataques de dicionário funcionam na prática. Quando você vê 14 milhões de senhas vazadas numa wordlist, fica óbvio por que a maioria das pessoas tá completamente exposta.
 
-O PasswordForge usa o modulo secrets do Python, que gera senhas com entropia criptografica real — diferente do modulo random, que é presível e não deve ser usado para fins de segurança.
+O PasswordForge usa o módulo `secrets` do Python, que gera senhas com entropia criptográfica real — diferente do módulo `random`, que é determinístico e não deveria chegar perto de nada relacionado à segurança.
 
 ---
 
@@ -22,20 +21,20 @@ Digite o tamanho desejado e a quantidade de senhas. O programa gera senhas com l
 
 ---
 
-## Por que secrets e nao random?
+## Por que `secrets` e não `random`?
 
-O modulo random do Python é deterministico, dado o mesmo estado inicial, sempre gera a mesma sequencia. Isso o torna inadequado para criptografia e geracao de senhas.
+O módulo `random` do Python é determinístico: dado o mesmo estado inicial, sempre produz a mesma sequência. Isso o torna completamente inadequado para criptografia ou geração de senhas.
 
-O modulo secrets usa fontes de entropia do sistema operacional, tornando as senhas geradas verdadeiramente imprevisíveis.
+O módulo `secrets` usa fontes de entropia do sistema operacional, tornando as senhas geradas verdadeiramente imprevisíveis.
 
 ---
 
-## Nota
+## Contexto
 
-Este projeto faz parte da minha jornada de transição de carreira para ciberseguranca. Estou aprendendo de forma autonoma, construindo ferramentas reais pra fixar os conceitos na pratica.
+Esse projeto faz parte da minha transição de carreira para cibersegurança. Tô aprendendo de forma autônoma, construindo ferramentas reais pra fixar os conceitos na prática — porque tutorial sem projeto não cola.
 
 Conforme avanço nos estudos, continuo melhorando e adicionando funcionalidades.
 
 ---
 
-23 anos. Logistica de dia, ciberseguranca de noite.
+23 anos. Logística de dia, cibersegurança de noite.
