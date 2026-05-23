@@ -1,5 +1,6 @@
 import random
 import string
+import secrets
 
 print("=== PasswordForge - Gerador de Senhas ===")
 
@@ -9,10 +10,10 @@ quantidade = int(input("Digite quantas senhas deseja criar: "))
 
 caracteres = string.ascii_letters + string.digits + string.punctuation
 
-for i in range(quantidade):
-    senha = ""
+print(f"\n{quantidade} senha(s) gerada(s):\n")
+
+for i in range(1, quantidade + 1):
+    senha = "".join(secrets.choice(caracteres) for _ in range(tamanho))
+    print(f"[{i}] {senha}")
     
-    for j in range(tamanho):
-        senha += random.choice(caracteres)
-    
-    print(f"Senha gerada: {senha}")
+print("\nDica: use um gerenciador de senhas para armazenar elas com segurança.")
